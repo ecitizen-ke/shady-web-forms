@@ -11,3 +11,8 @@ posts = [
 @app.route("/")
 def index():
     return render_template("index.html", posts=posts)
+
+
+@app.route("/create", methods=["GET", "POST"])
+def create():
+    return render_template("create.html")
