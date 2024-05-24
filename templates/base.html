@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Flaskapp</title>
+
+     <style>
+        .message {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="{{ url_for('index') }}">Flask App</a>
+        <a href="#}">About</a>
+    </nav>
+    <hr>
+    <main>
+        {%block content %}  {% endblock %}
+
+
+    </main>
+    
+</body>
+</html>
